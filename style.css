@@ -1,0 +1,236 @@
+*{
+  box-sizing: border-box;
+}
+body{
+ margin: 0;
+ padding: 0;
+ font-family: 'Cormorant', serif;
+ background-color: #f3f6f4;
+}
+.container{
+  width:950px;
+  margin: 0 auto;
+}
+/* HEADER */
+header{
+   background-color: #262626;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+ul{
+ display: flex;
+ list-style: none;
+}
+li{
+ margin-right: .5em;
+}
+.underline-effect {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+.underline-effect::after{
+  content: '';
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.underline-effect:hover::after{
+ width: 100%;
+}
+.fa-solid {
+ color: white;
+ margin-left: .5em;
+}
+/* Home page */
+.home-page{
+  background: url('images/sushi.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 4em;
+  min-height: 88.5vh;
+  background-color: #262626;
+  background-blend-mode: overlay;
+  color: white;
+  padding: 0 2em;
+}
+.home-page div{
+ padding-top: 2em;
+}
+.home-page h1{
+ margin-top: 0;
+ margin-bottom: 0;
+}
+.home-page p{
+ margin-top: 0;
+ margin-bottom: 0;
+}
+
+
+
+/* Menu-page */
+.menu-nav{
+  background-color: #262626;
+}
+.menu-ul{
+  justify-content: center;
+}
+.menu-ul li{
+  margin-left: .2em;
+}
+.menu-link{
+  font-size: 1.7rem;
+}
+
+.menu-images{
+  display: flex;
+  padding: 1em ;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap:20px;
+}
+.menu-images img{
+  width:35%;
+  border-radius: 10%;
+}
+
+.seafood-div,
+.meat-div,
+.noodles-div{
+  background-color: #262626;
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.seafood-div{
+  background-image: url('images/goldfish-pattern.gif');
+}
+.meat-div{
+  background-image: url('images/meat-pattern-bg.jpg');
+}
+.noodles-div{
+  background-image: url('images/noodles-pattern.jpg');
+}
+.food-container{
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.seafood-div .fa-solid,
+.meat-div .fa-solid,
+.noodles-div .fa-solid{
+  position: absolute;
+  left: 2%;
+  font-size: 1.5em;
+  top:1%;
+  
+}
+.seafood-div .fa-solid:hover,
+.meat-div .fa-solid:hover,
+.noodles-div .fa-solid:hover{
+  color: rgba(240, 248, 255, 0.553);
+}
+.seafood-div h1,
+.meat-div h1,
+.noodles-div h1{
+  padding-top: 1em;
+}
+
+
+.food-content{
+  
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+ 
+  
+}
+.food-img{
+  width:40%;
+  border-radius: 20px;
+  display: block;
+ 
+  margin:  .5em auto;
+  
+}
+span
+ {
+  margin: .5em 0;
+}
+.food-title,.food-price{
+  font-size:2rem ;
+}
+
+.food-title{
+  display: block;
+  margin:.2em 0 ;
+}
+
+
+
+/* opening hours */
+
+.openinigHours {
+  background-image: url('images/sushi.jpg');
+  min-height: 88.5vh;
+  background-color: #262626;
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
+}
+table{
+  margin: 0 auto;
+ 
+  padding: .5em;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+caption{
+  padding: .1em;
+}
+th{
+  padding: 0em .5em .5em   0;
+
+}
+td,tr{
+  padding: .5em;
+}
+
+/* booking online */
+.book-online-section div{
+  background-image: url('images/bg-food.jpg');
+  min-height: 88.5vh;
+  padding: 1em;
+  background-color: #262626;
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.book-online-section div h1,
+.book-online-section div h2{
+  font-size: 2rem;
+}
+
+.book-online-section div p{
+  font-size: 1.7rem;
+  padding: 0;
+  margin: .5em;
+}
+
+input{
+  font-size: 1.4rem;
+  /* margin-top: 0; */
+  padding: 0;
+}
